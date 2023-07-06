@@ -1,0 +1,28 @@
+{
+  "name": "reset",
+  "version": "1.0.0",
+  "description": "Modern web CSS reset.",
+  "main": "./dist/main.min.css",
+  "scripts": {
+    "build": "npm run compile && npm run compile-min",
+    "compile": "sass ./src/main.scss ./dist/main.css --no-source-map",
+    "compile-min": "sass ./src/main.scss ./dist/main.min.css --no-source-map --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/higby/reset.git"
+  },
+  "keywords": [
+    "CSS",
+    "Reset"
+  ],
+  "author": "Branden Higby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/higby/reset/issues"
+  },
+  "homepage": "https://github.com/higby/reset#readme",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}

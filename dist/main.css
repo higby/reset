@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(0.25rem + 1em + 0.25rem);
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+@media (prefers-reduced-motion: no-preference) {
+  body:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ol, ul {
+  list-style-position: inside;
+}
+ol ol, ol ul, ul ol, ul ul {
+  padding: revert;
+}
+ol[role=list], ul[role=list] {
+  list-style: none;
+}
+
+pre {
+  overflow: auto;
+}
+
+picture, img, svg, video, canvas, audio, object {
+  display: block;
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+input, textarea, select, button {
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+@supports (resize: block) {
+  textarea {
+    resize: block;
+  }
+}
+
+button, button[type], input[type=button], input[type=submit], input[type=reset] {
+  user-select: none;
+  text-align: center;
+}
+button[disabled], button[type][disabled], input[type=button][disabled], input[type=submit][disabled], input[type=reset][disabled] {
+  cursor: not-allowed;
+}
