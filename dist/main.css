@@ -40,10 +40,13 @@ pre {
   overflow: auto;
 }
 
-picture, img, svg, video, canvas, audio, object {
+picture, img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
-  block-size: auto;
   max-inline-size: 100%;
+}
+
+picture, img, svg, video {
+  block-size: auto;
 }
 
 input, textarea, select, button {
