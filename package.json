@@ -1,6 +1,6 @@
 {
   "name": "@higby/reset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Modern web CSS reset.",
   "main": "./dist/main.min.css",
   "scripts": {
