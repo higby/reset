@@ -1,7 +1,7 @@
 {
   "name": "@higby/reset",
-  "version": "1.0.3",
-  "description": "Modern web CSS reset.",
+  "version": "1.0.4",
+  "description": "Modern CSS reset.",
   "main": "./dist/main.min.css",
   "scripts": {
     "build": "npm run compile && npm run compile-min",
@@ -15,6 +15,9 @@
   "keywords": [
     "CSS",
     "Reset"
+  ],
+  "files": [
+    "dist/"
   ],
   "author": "Branden Higby",
   "license": "MIT",

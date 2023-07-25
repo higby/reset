@@ -1,6 +1,6 @@
 # reset
 
-Modern web CSS reset.
+Modern CSS reset.
 
 ## Installation
 
