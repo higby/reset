@@ -8,10 +8,6 @@
   line-height: calc(0.25rem + 1em + 0.25rem);
 }
 
-html {
-  scrollbar-gutter: stable both-edges;
-}
-
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
