@@ -1,10 +1,10 @@
 {
   "name": "@higby/reset",
-  "version": "2.1.0",
-  "description": "Modern CSS reset.",
+  "version": "3.0.0",
+  "description": "Modern CSS reset",
   "main": "reset.css",
   "scripts": {
-    "minify": "lightningcss --minify main.css -o min.css"
+    "minify": "lightningcss --minify main.css -o reset.css"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,7 @@
     "Reset"
   ],
   "files": [
-    "main.css",
-    "min.css"
+    "reset.css"
   ],
   "author": "Branden Higby",
   "license": "MIT",

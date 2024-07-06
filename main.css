@@ -3,21 +3,23 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin-block: unset;
 }
 
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   block-size: 100%;
+  margin: unset;
   text-size-adjust: none;
+  overflow-y: scroll;
 }
 
 body {
   min-block-size: 100%;
   text-rendering: optimizeSpeed;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   body:focus-within {
     scroll-behavior: smooth;
@@ -36,9 +38,11 @@ p {
 ol, ul {
   list-style-position: inside;
 }
+
 ol ol, ol ul, ul ol, ul ul {
   padding: revert;
 }
+
 ol[role=list], ul[role=list] {
   list-style: none;
 }
@@ -65,8 +69,10 @@ input, textarea, select, button {
 }
 
 textarea {
+  min-height: 10em;
   resize: vertical;
 }
+
 @supports (resize: block) {
   textarea {
     resize: block;
@@ -77,6 +83,7 @@ button, button[type], input[type=button], input[type=submit], input[type=reset] 
   user-select: none;
   text-align: center;
 }
+
 button[disabled], button[type][disabled], input[type=button][disabled], input[type=submit][disabled], input[type=reset][disabled] {
   cursor: not-allowed;
 }
