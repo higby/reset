@@ -45,6 +45,7 @@ ol ol, ol ul, ul ol, ul ul {
 
 ol[role=list], ul[role=list] {
   list-style: none;
+  padding: unset;
 }
 
 pre {
