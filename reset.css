@@ -36,8 +36,9 @@ p {
   text-wrap: pretty;
 }
 
-li :is(ol, ul) {
-	padding: revert;
+ol,
+ul {
+  padding: revert;
 }
 
 ol[role="list"],
